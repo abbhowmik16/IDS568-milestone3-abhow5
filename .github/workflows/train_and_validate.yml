@@ -11,7 +11,7 @@ jobs:
   train-validate:
     runs-on: ubuntu-latest
     env:
-      # Force a Linux-safe MLflow location inside the repo workspace
+      # Linux-safe MLflow location inside GitHub runner workspace
       MLFLOW_TRACKING_URI: file:${{ github.workspace }}/mlruns
       MLFLOW_EXPERIMENT_NAME: ids568_milestone3
       MIN_ACCURACY: "0.90"
@@ -26,9 +26,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Upgrade build tools
         run: |
           python -m pip install --upgrade pip setuptools wheel
+
+      - name: Install dependencies
+        run: |
           pip install -r requirements.txt
 
       - name: Preprocess
@@ -43,7 +46,7 @@ jobs:
         run: |
           python model_validation.py
 
-      - name: Upload metrics.json (for checklist evidence)
+      - name: Upload metrics.json (checklist evidence)
         uses: actions/upload-artifact@v4
         with:
           name: metrics
