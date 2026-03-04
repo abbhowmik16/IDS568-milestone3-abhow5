@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Projects/IDS568-milestone3-abhow5/mlruns/169977853833213017/a38d05be20714223a274a29a0687ef4c/artifacts
+end_time: 1772633788344
+entry_point_name: ''
+experiment_id: '169977853833213017'
+lifecycle_stage: active
+run_id: a38d05be20714223a274a29a0687ef4c
+run_name: blushing-hog-11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772633783492
+status: 3
+tags: []
+user_id: Owner

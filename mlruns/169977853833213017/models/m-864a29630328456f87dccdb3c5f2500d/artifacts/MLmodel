@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Projects/IDS568-milestone3-abhow5/mlruns/169977853833213017/models/m-864a29630328456f87dccdb3c5f2500d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.0
+model_id: m-864a29630328456f87dccdb3c5f2500d
+model_size_bytes: 969
+model_uuid: m-864a29630328456f87dccdb3c5f2500d
+prompts: null
+run_id: 56da872e18114b27aca29092d35e538d
+utc_time_created: '2026-03-04 07:00:07.237043'

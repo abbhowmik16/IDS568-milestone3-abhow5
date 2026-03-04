@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Projects/IDS568-milestone3-abhow5/mlruns/169977853833213017/models/m-5e5b226717ba45288616f93e72b05c36/artifacts
+creation_timestamp: 1772633837006
+experiment_id: '169977853833213017'
+last_updated_timestamp: 1772633841165
+model_id: m-5e5b226717ba45288616f93e72b05c36
+model_type: null
+name: model
+source_run_id: 2271d40dc7174e9c992af889e9be91a9
+status: 2
+status_message: null

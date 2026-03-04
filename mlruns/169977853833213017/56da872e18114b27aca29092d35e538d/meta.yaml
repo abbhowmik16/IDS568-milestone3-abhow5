@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Projects/IDS568-milestone3-abhow5/mlruns/169977853833213017/56da872e18114b27aca29092d35e538d/artifacts
+end_time: 1772607610716
+entry_point_name: ''
+experiment_id: '169977853833213017'
+lifecycle_stage: active
+run_id: 56da872e18114b27aca29092d35e538d
+run_name: luminous-smelt-504
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772607606907
+status: 3
+tags: []
+user_id: Owner

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Projects/IDS568-milestone3-abhow5/mlruns/169977853833213017/783fda26a9d14c83aa1408606c6dcbb5/artifacts
+end_time: 1772607576479
+entry_point_name: ''
+experiment_id: '169977853833213017'
+lifecycle_stage: active
+run_id: 783fda26a9d14c83aa1408606c6dcbb5
+run_name: puzzled-cub-743
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772607572583
+status: 3
+tags: []
+user_id: Owner

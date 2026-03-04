@@ -1,0 +1,6 @@
+{
+  "dataset": "sklearn_iris",
+  "rows": 150,
+  "cols": 5,
+  "output_path": "data/processed\\iris_processed.csv"
+}
