@@ -1,0 +1,43 @@
+name: Train and Validate Model
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  train-validate:
+    runs-on: ubuntu-latest
+    env:
+      MLFLOW_TRACKING_URI: file:./mlruns
+      MLFLOW_EXPERIMENT_NAME: ids568_milestone3
+      MIN_ACCURACY: "0.90"
+      MIN_F1: "0.90"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Preprocess
+        run: |
+          python preprocess.py
+
+      - name: Train (logs to MLflow)
+        run: |
+          python train.py --C 1.0 --max_iter 200
+
+      - name: Quality Gate (model_validation.py)
+        run: |
+          python model_validation.py
